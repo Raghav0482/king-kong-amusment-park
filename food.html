@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King kong amusement park</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">King kong amusement park</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">Resturant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallary.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ticket.html">Tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <div>
+                    <button type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#loginModal"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#signupModal"><i class="fas fa-user"></i>&nbsp; SignUp</button>
+                </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModal">Login using your credentials</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form><input type="hidden">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="name" class="form-control" id="uname" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <input type="hidden">
+                        <button type="submit" class="btn btn-success mt-2"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="signupModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModal">SignUp for an account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form><input type="hidden">
+
+                        <div class="form-group">
+                            <label for="uname">Username</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Choose a password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Choose a password">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Retype a password</label>
+                            <input type="password" class="form-control" id="password2" placeholder="Retype your password">
+                        </div>
+                        <input type="hidden">
+                        <button type="submit" class="btn btn-success mt-2"><i class="fas fa-user"></i>&nbsp; SignUp</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <h1 id="top-text">Resturant</h1>
+            <img src="images/Resturant/head.jpg" id="resturant-image" style="width:100%; height:400px;">
+        </div>
+    </header>
+
+    <div class="main_header container">
+        <div class="row w-100 h-100 p-5">
+            <div class="col-lg-6 col-md-6 col-12" id="heading-text">
+                <i class="fas fa-utensils" style="font-size: 45px;"></i>
+                <h3>Food Street in King kong</h3>
+                <h5>
+                    Restaurants are classified or distinguished in many different ways. The primary factors are usually
+                    the food itself (e.g. vegetarian, seafood, steak); the cuisine (e.g. Italian, Chinese, Japanese,
+                    Indian, French, Mexican, Thai) or the style of offering (e.g. tapas bar, a sushi train, a tastet
+                    restaurant, a buffet restaurant or a yum cha restaurant).
+                </h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12" id="food-street">
+                <img class="img-fluid zoom" src="images/Resturant/Street_Food_1.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row w-100 h-100" id="option-heading">
+            <div class="col-md-5">
+                <hr>
+            </div>
+            <div class="col-md-2">
+                <h1>Eat</h1>
+            </div>
+            <div class="col-md-5">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row w-100 h-100">
+            <div class="col-md-1"></div>
+            <div class="col-md-3" id="resturant-option" style="width:29%">
+                <img src="images/Resturant/mcdonalds.jpg" alt="McDonald's" style="width:300px; height:300px">
+                <br><br>
+                <h4>
+                    McDonald's
+                </h4>
+                <h6>
+                    <a href="https://www.mcdonaldsindia.com/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 60px !important;">
+                <img src="images/Resturant/pizzamax.jpg" alt="Domino's Pizza" style="width:300px; height:300px">
+                <br><br>
+                <h4>
+                    Domino's Pizza
+                </h4>
+                <h6>
+                    <a href="https://pizzaonline.dominos.co.in/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 100px !important;">
+                <img src="images/Resturant/dunkin.jpg" alt="Domino's Pizza" style="width:300px; height:300px">
+                <br><br>
+                <h4>
+                    Dunkin' Donuts
+                </h4>
+                <h6>
+                    <a href="http://www.dunkinindia.com/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+        </div>
+        <div class="row w-100 h-100">
+            <div class="col-md-1"></div>
+            <div class="col-md-3" id="resturant-option" style="width:29%">
+                <img src="images/Resturant/pizzahut.jpg" alt="Pizza Hut" style="width:300px; height:300px;">
+                <br><br>
+                <h4>
+                    Pizza Hut
+                </h4>
+                <h6>
+                    <a href="https://www.pizzahut.co.in/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 60px !important;">
+                <img src="images/Resturant/KFC.jpg" alt="KFC" style="width:300px; height:300px">
+                <br><br>
+                <h4>
+                    KFC
+                </h4>
+                <h6>
+                    <a href="https://online.kfc.co.in/home" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 100px !important;">
+                <img src="images/Resturant/subway.jpg" alt="Subway" style="width:300px; height:300px">
+                <br><br>
+                <h4>
+                    Subway
+                </h4>
+                <h6>
+                    <a href="https://www.subway.com/en-IN" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row w-100 h-100" id="option-heading">
+            <div class="col-md-5">
+                <hr>
+            </div>
+            <div class="col-md-2">
+                <h1>Drink</h1>
+            </div>
+            <div class="col-md-5">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row w-100 h-100">
+            <div class="col-md-1"></div>
+            <div class="col-md-3" id="resturant-option" style="width:29%">
+                <img src="images/Resturant/mc coffee.jpg" alt="McDonald's" style="width:300px; height:300px">
+                <br><br>
+                <h4>
+                    McDonald's
+                </h4>
+                <h6>
+                    <a href="https://www.mcdonaldsindia.com/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 70px;">
+                <img src="images/Resturant/mc coofee.jpg" alt="McDonald's" style="width:300px; height:300px;">
+                <br><br>
+                <h4>
+                    McDonald's
+                </h4>
+                <h6>
+                    <a href="https://www.mcdonaldsindia.com/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 125px;">
+                <img src="images/Resturant/mc drink.jpg" alt="McDonald's" style="width:300px; height:300px;">
+                <br><br>
+                <h4>
+                    McDonald's
+                </h4>
+                <h6>
+                    <a href="https://www.mcdonaldsindia.com/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+        </div>
+
+        <div class="row w-100 h-100">
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 125px;">
+                <img src="images/Resturant/d d coffee.jpg" alt="Dunkin' Donuts" style="width:300px; height:300px;">
+                <br><br>
+                <h4>
+                    Dunkin' Donuts
+                </h4>
+                <h6>
+                    <a href="http://www.dunkinindia.com/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 175px;">
+                <img src="images/Resturant/d d ice.jpg" alt="Dunkin' Donuts" style="width:300px; height:300px;">
+                <br><br>
+                <h4>
+                    Dunkin' Donuts
+                </h4>
+                <h6>
+                    <a href="http://www.dunkinindia.com/" target="_blank">DETAILS</a>
+                </h6>
+            </div>
+
+            <div class="col-md-3" id="resturant-option" style="width:29%; padding-left: 225px;">
+                <img src="images/Resturant/d d shake.jpg" alt="Dunkin' Donuts" style="width:300px; height:300px;">
+                <br><br>
+                <h4>
+                    Dunkin' Donuts
+                </h4>
+                <h6>
+                    <a href="http://www.dunkinindia.com/" target="_blank">DETAILS</a>
+                    
+                </h6>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer start -->
+    <section style="padding-top: 30px;">
+        <div id="footer">
+            <br><br>
+            <div class="container-fluid row">
+                <br> <br>
+                <div class="col-md-4">
+                    <h2 class="ab">About the Company</h2><br><br>
+                    <p class="para">
+                        With the development of society,there are more and more amusement parks appearing. While they
+                        are similar, inside just have some amusement equipment, so these playgrounds are only one place
+                        for play,and they can not survive for a long time.
+                    </p><br>
+                    <div class="media">
+                        <ul class="list-unstyled">
+                            <li><a href="#"> <i class="fab fa-facebook-f"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-twitter"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-instagram"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-google-plus-g"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-youtube"> </i></a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="ab">Contact us </h2><br><br>
+                    <p class="cont"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; khanpur kolian NH1 (BRIDGE), Masana, Haryana
+                    </p>
+                    <p class="cont"> <i class="fa fa-phone"></i>&nbsp;&nbsp; +91 1234567890</p>
+                    <p class="cont"><i class="fa fa-envelope"></i>&nbsp;&nbsp; test@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="ab">Subcribe our Newsletter</h2><br><br>
+                    <form><br>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <input type="Email" name="email" placeholder="Enter Email" class="form-control"
+                                    required="">
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-info ">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr style="height: 5px;color: #fff;">
+            <p style="text-align: center;font-size: 16px;">Copyright ©2020 All rights reserved by <strong>king kong
+                    amusement park</strong></p>
+            <br><br>
+            <br>
+        </div>
+    </section>
+    <!-- footer end -->
+     <!-- to top cursor start-->
+    <div class="container scrolltop float-right pr-5">
+        <i class="fa fa-arrow-up" onclick="myFunction()" id="myBtn"></i>
+    </div>
+    <!-- to top cursor end -->
+    <!-- script tag start  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/totop.js"></script>
+    <script src="js/javascript.js"></script>
+    <!-- script tag end -->
+</body>
+
+</html>

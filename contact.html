@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King kong amusement park</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">King kong amusement park</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">Resturant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallary.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ticket.html">Tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <div>
+                    <button type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#loginModal"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#signupModal"><i class="fas fa-user"></i>&nbsp; SignUp</button>
+                </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModal">Login using your credentials</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form><input type="hidden">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="name" class="form-control" id="uname" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <input type="hidden">
+                        <button type="submit" class="btn btn-success mt-2"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="signupModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModal">SignUp for an account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form><input type="hidden">
+
+                        <div class="form-group">
+                            <label for="uname">Username</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Choose a password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Choose a password">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Retype a password</label>
+                            <input type="password" class="form-control" id="password2" placeholder="Retype your password">
+                        </div>
+                        <input type="hidden">
+                        <button type="submit" class="btn btn-success mt-2"><i class="fas fa-user"></i>&nbsp; SignUp</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <h1 id="top-text">Contact Us</h1>
+            <img src="images/contact us/main.jpg" id="gallary-image" style="width:100%; height:400px;">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row w-100 h-100" " style=" padding-top:40px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3 class="text-center" style="color:#666">
+                    <i class="fas fa-envelope" style="font-size:44px"></i>
+                    <br>
+                    We’re always happy to hear from our guests! If you have any
+                    questions, comments or topics that you’d like to share with us, please fill out the form below.
+                    We’ll be sure to get back to you as quickly and courteously as we can.
+                </h3>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row w-100 h100">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="form">
+                <form style="font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif !important">
+					<label><strong>Full Name*</strong><br>
+						<input type="text" id="text" required placeholder="full name">
+					</label>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					<label><strong>Email Address*</strong><br>
+						<input type="text" id="text" required placeholder="email@domin.com">
+					</label>
+					<br>
+
+					<br><br>
+					<label><strong>Message*</strong></label>
+					<textarea id="message" required placeholder="Write your message here"></textarea>
+					<input type="submit" id="submit" value="Submit" class="btn btn-primary">
+				</form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer start -->
+    <section style="padding-top: 30px;">
+        <div id="footer">
+            <br><br>
+            <div class="container-fluid row">
+                <br> <br>
+                <div class="col-md-4">
+                    <h2 class="ab">About the Company</h2><br><br>
+                    <p class="para">
+                        With the development of society,there are more and more amusement parks appearing. While they
+                        are similar, inside just have some amusement equipment, so these playgrounds are only one place
+                        for play,and they can not survive for a long time.
+                    </p><br>
+                    <div class="media">
+                        <ul class="list-unstyled">
+                            <li><a href="#"> <i class="fab fa-facebook-f"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-twitter"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-instagram"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-google-plus-g"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-youtube"> </i></a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="ab">Contact us </h2><br><br>
+                    <p class="cont"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; khanpur kolian NH1 (BRIDGE), Masana, Haryana
+                    </p>
+                    <p class="cont"> <i class="fa fa-phone"></i>&nbsp;&nbsp; +91 1234567890</p>
+                    <p class="cont"><i class="fa fa-envelope"></i>&nbsp;&nbsp; test@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="ab">Subcribe our Newsletter</h2><br><br>
+                    <form><br>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <input type="Email" name="email" placeholder="Enter Email" class="form-control"
+                                    required="">
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-info ">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr style="height: 5px;color: #fff;">
+            <p style="text-align: center;font-size: 16px;">Copyright ©2020 All rights reserved by <strong>king kong
+                    amusement park</strong></p>
+            <br><br>
+            <br>
+        </div>
+    </section>
+    <!-- footer end -->
+    <!-- to top cursor start-->
+    <div class="container scrolltop float-right pr-5">
+        <i class="fa fa-arrow-up" onclick="myFunction()" id="myBtn"></i>
+    </div>
+    <!-- to top cursor end -->
+    <!-- script tag start  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/totop.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/video.js"></script>
+    <!-- script tag end -->
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King kong amusement park</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">King kong amusement park</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">Resturant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallary.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ticket.html">Tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <div>
+                    <button type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#loginModal"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#signupModal"><i class="fas fa-user"></i>&nbsp; SignUp</button>
+                </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModal">Login using your credentials</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form><input type="hidden">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="name" class="form-control" id="uname" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <input type="hidden">
+                        <button type="submit" class="btn btn-success mt-2"><i class="fas fa-sign-in-alt"></i>&nbsp; Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="signupModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModal">SignUp for an account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form><input type="hidden">
+
+                        <div class="form-group">
+                            <label for="uname">Username</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Choose a password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Choose a password">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Retype a password</label>
+                            <input type="password" class="form-control" id="password2" placeholder="Retype your password">
+                        </div>
+                        <input type="hidden">
+                        <button type="submit" class="btn btn-success mt-2"><i class="fas fa-user"></i>&nbsp; SignUp</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <h1 id="top-text">Tickets</h1>
+            <img src="images/tickets/main.jpg" id="gallary-image" style="width:100%; height:400px;">
+        </div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <h3>PRICES</h3>
+        <table>
+            <tr id="price-row">
+                <th style="text-align:center"> PRICE CATEGORIES</th>
+                <th id="price-data"> Weekday</th>
+                <th id="price-data"> Weekend</th>
+                <th id="price-data"> Faimly Pack</th>
+            </tr>
+
+            <tr id="price-row">
+                <td id="price-categories"><strong>Infants (under 4)</strong><br>Proof of age in the form of a current
+                    passport or copy of the birth certificate is required. Without valid proof of age, the price for
+                    children (aged 4 - 11) will be charged.</td>
+                <td id="price-data">FREE</td>
+                <td id="price-data">FREE</td>
+                <td id="price-data">FREE</td>
+            </tr>
+
+            <tr id="price-row">
+                <td id="price-categories"><strong>Children (aged 4-11)</strong><br>Proof of age in the form of a current
+                    passport or copy of the birth certificate is required. Without valid proof of age, the price for
+                    adults (aged 12+) will be charged.</td>
+                <td id="price-data">Rs. 300</td>
+                <td id="price-data">Rs. 500</td>
+                <td id="price-data">Rs. 200</td>
+            </tr>
+
+            <tr id="price-row">
+                <td id="price-categories"><strong>Children on their birthday </strong><br>(up to their 12th birthday and
+                    on presentation of an identity card)</td>
+                <td id="price-data">FREE</td>
+                <td id="price-data">FREE</td>
+                <td id="price-data">FREE</td>
+            </tr>
+
+            <tr id="price-row">
+                <td id="price-categories"><strong>Adults (aged 12+)</strong></td>
+                <td id="price-data">Rs. 500</td>
+                <td id="price-data">Rs. 700</td>
+                <td id="price-data">Rs. 300</td>
+            </tr>
+
+            <tr id="price-row">
+                <td id="price-categories"><strong>Senior Visitors (aged 60+)</strong><br>Offers for Senior Visitors
+                    (aged 60+).</td>
+                <td id="price-data">FREE</td>
+                <td id="price-data">200</td>
+                <td id="price-data">FREE</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="col-md-12" style="padding:70px;">
+        <h1 class="text-center">Select When You're Going</h1>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="row w-100 h-100">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="month" style="border:2px solid black">
+
+                    <ul>
+                        <li><span id="prev">&#10094;</span></li>
+                        <li>July<br><span style="font-size:18px">2020</span></li>
+                        <li><span id="next">&#10095;</span></li>
+                    </ul>
+
+                </div>
+
+                <ul class="weekdays">
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                    <li>Sun</li>
+                </ul>
+
+                <ul class="days" style="border:2px solid black">
+                    <li></li>
+                    <li></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li id="weekend">4</li>
+                    <li id="weekend">5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li id="weekend">11</li>
+                    <li id="weekend">12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li id="weekend">18</li>
+                    <li id="weekend">19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li class="active" style="background-color: #1abc9c; color: #fff;">22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li id="weekend">25</li>
+                    <li id="weekend">26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row w-100 h-100">
+            <div class="col-md-3" style="width:21%;"></div>
+
+            <div class="col-md-3" style="background-color:#CCC; border:2px solid black">
+                <h2 class="text-center">Weekday</h2>
+                <h4 class="text-center">From Rs 500</h4>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-3" style="background-color:#999; border:2px solid black">
+                <h2 class="text-center">Weekend</h2>
+                <h4 class="text-center">From Rs 700</h4>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row w-100 h-100">
+            <h1 class="" style="padding:60px 0px 30px 180px;">Select the Number of The Ticket<br>
+                <p style="font-size:14px">Please note that children age bellow 3 don't need a ticket.</p>
+            </h1>
+
+            <div class="col-md-2" style="width:15%"></div>
+
+            <div class="col-md-5" id="select-num">
+                <h3 style="display:inline-block;vertical-align:middle; width:35%">Age 3-11</h3>
+                <button class="btn btn-outline-primary">
+                    <i id="down" onclick=" down('0')" onClick="ticket1('0')" class="fa fa-minus-circle"
+                        style="display:inline-block; font-size:34px;vertical-align:middle;cursor:pointer;"></i>
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <input type="text" id="myNumber" value="0"
+                    style="outline:none; border:none; background-color:#f5f5f5; width:22px; font-size:18px;vertical-align:middle; display:inline-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <button class="btn btn-outline-primary">
+                    <i id="up" onclick="up('20')" onClick="ticket1('0')" class="fa fa-plus-circle"
+                        style="display:inline-block;font-size:34px; vertical-align:middle; cursor:pointer"></i>
+                </button>
+            </div>
+
+            <div class="col-md-5" id="select-num">
+                <h3 style="display:inline-block;vertical-align:middle; width:35%">Age 12+</h3>
+                <button class="btn btn-outline-primary">
+                    <i id="down" onclick="down1('0')" onClick="ticket1('0')" class="fa fa-minus-circle"
+                        style="display:inline-block;font-size:34px; vertical-align:middle; cursor:pointer"></i>
+                </button>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <input type="text" id="myNumber1" value="0"
+                    style="outline:none; border:none; background-color:#f5f5f5; width:22px; font-size:18px;vertical-align:middle; display:inline-block">
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <button class="btn btn-outline-primary">
+                    <i id="up" onclick="up1('20')" onClick="ticket1('0')" class="fa fa-plus-circle"
+                        style="display:inline-block;font-size:34px; vertical-align:middle; cursor:pointer">
+                    </i>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <div class="row w-100 h-100">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style=" border:2px solid black; border-radius:8px;">
+                <h5>1-Day Regular Ticket for <h4><strong>King kong Amuesment Park</strong></h4>
+                </h5>
+                <input type="text" value="0" id="ticket1"
+                    style="outline:none; border:none; background-color:#f5f5f5; width:22px; font-size:18px;vertical-align:middle; display:inline-block" />
+                <h5 style="display:inline-block">(Age 3-11)&nbsp;
+                    <strong>Rs.300</strong>&nbsp;/ticket</h5>
+                <br>
+                <input type="text" value="0" id="ticket2"
+                    style="outline:none; border:none; background-color:#f5f5f5; width:22px; font-size:18px;vertical-align:middle; display:inline-block" />
+                <h5 style="display:inline-block">(Age 12+)&nbsp;
+                    <strong>&nbsp;Rs.500</strong>&nbsp;/ticket</h5>
+                <p id="total"></p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- footer start -->
+    <section style="padding-top: 30px;">
+        <div id="footer">
+            <br><br>
+            <div class="container-fluid row">
+                <br> <br>
+                <div class="col-md-4">
+                    <h2 class="ab">About the Company</h2><br><br>
+                    <p class="para">
+                        With the development of society,there are more and more amusement parks appearing. While they
+                        are similar, inside just have some amusement equipment, so these playgrounds are only one place
+                        for play,and they can not survive for a long time.
+                    </p><br>
+                    <div class="media">
+                        <ul class="list-unstyled">
+                            <li><a href="#"> <i class="fab fa-facebook-f"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-twitter"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-instagram"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-google-plus-g"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-youtube"> </i></a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="ab">Contact us </h2><br><br>
+                    <p class="cont"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; khanpur kolian NH1 (BRIDGE), Masana, Haryana
+                    </p>
+                    <p class="cont"> <i class="fa fa-phone"></i>&nbsp;&nbsp; +91 1234567890</p>
+                    <p class="cont"><i class="fa fa-envelope"></i>&nbsp;&nbsp; test@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="ab">Subcribe our Newsletter</h2><br><br>
+                    <form><br>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <input type="Email" name="email" placeholder="Enter Email" class="form-control"
+                                    required="">
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-info ">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr style="height: 5px;color: #fff;">
+            <p style="text-align: center;font-size: 16px;">Copyright ©2020 All rights reserved by <strong>king kong
+                    amusement park</strong></p>
+            <br><br>
+            <br>
+        </div>
+    </section>
+    <!-- footer end -->
+    <!-- to top cursor start-->
+    <div class="container scrolltop float-right pr-5">
+        <i class="fa fa-arrow-up" onclick="myFunction()" id="myBtn"></i>
+    </div>
+    <!-- to top cursor end -->
+    <!-- script tag start  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/totop.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/video.js"></script>
+    <!-- script tag end -->
+</body>
+
+</html>
+
+<!-- style="display:inline-block; font-size:34px;vertical-align:middle; color:#009;cursor:pointer" -->

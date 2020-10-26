@@ -1,0 +1,805 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text_effects {
+    text-shadow: 2px 2px 2px blue;
+    transition: transform 2s;
+}
+
+.text_effects:hover {
+    transform: rotate(360deg);
+}
+
+.change_text {
+    color: red;
+}
+
+
+.user_feedback {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#face1 {
+    width: 75px;
+    height: 75px;
+    border-radius: 25%;
+}
+
+#face2 {
+    width: 75px;
+    height: 100px;
+    border-radius: 25%;
+}
+
+#face3 {
+    width: 100px;
+    height: 75px;
+    border-radius: 25%;
+}
+
+.card {
+    box-shadow: 4px 4px 5px 4px grey;
+    margin-bottom: 20px;
+}
+
+.aboutus {
+    background-color: rgb(240, 240, 240);
+}
+
+/*to top cursour*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #009!important;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover{
+    background-color: #0066FF!important;
+}
+
+/* carousel-indicators color */
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+/* main heading */
+
+.middel h2 {
+    text-align: center;
+    /* margin: 0px !important; */
+}
+
+.middel h4 {
+    text-align: center;
+    /* margin: 0px !important; */
+}
+
+/* part 1 attraction */
+
+#image1 {
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+    transition: 1s;
+    box-shadow: 10px 10px 10px #999999;
+}
+
+#image1:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+#attraction h4 {
+    color: #09F;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#attraction h5 {
+    color: #666;
+    width: 70%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#attraction h3 {
+    background-color: #09F;
+    width: 150px;
+    height: 35spx;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 09px;
+    transition: 0.6s;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+
+
+.attraction box{
+    padding-left: 15%;
+}
+
+#attraction {
+    padding-left: 15%;
+}
+
+/* second image */
+
+#image2 {
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+    transition: 1s;
+    box-shadow: 10px 10px 10px #999999;
+    margin-top: 60px;
+}
+
+#image2:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+#ride {
+    margin-top: 80px;
+}
+
+#ride h4 {
+    color: #09F;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#ride h5 {
+    color: #666;
+    width: 70%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#ride h3 {
+    background-color: #09F;
+    width: 150px;
+    height: 35spx;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 09px;
+    transition: 0.6s;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#ride h3:hover {
+    background-color: #03C;
+}
+
+#image2 {
+    padding-left: 10%;
+}
+
+/* third image */
+
+#image3 {
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+    transition: 1s;
+    box-shadow: 10px 10px 10px #999999;
+}
+
+#image3:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+#ticket h4 {
+    color: #09F;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#ticket h5 {
+    color: #666;
+    width: 70%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#ticket h3 {
+    background-color: #09F;
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 09px;
+    transition: 0.6s;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#ticket h3:hover {
+    background-color: #03C;
+}
+
+#ticket {
+    margin-left: 15%;
+}
+
+/* image 4 */
+
+#image4 {
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+    transition: 1s;
+    box-shadow: 10px 10px 10px #999999;
+}
+
+#image4:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+#resturant {
+    margin-top: 25px;
+    height: 300px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#resturant h4 {
+    color: #09F;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#resturant h5 {
+    color: #666;
+    width: 70%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#resturant h3 a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#resturant h3 {
+    background-color: #09F;
+    width: 150px;
+    height: 35spx;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 09px;
+    transition: 0.6s;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#resturant h3:hover {
+    background-color: #03C;
+}
+
+
+@media(max-width:767px) {
+    #attraction{
+        padding-top: 10%;
+    }
+    #ride{
+        padding-top: 0px !important;
+        margin-top: 0px !important;
+    }
+}
+/* footer start */
+
+#footer {
+    background-color: #292b3b;
+    color: #fff;
+    font-family: monospace;
+}
+
+.para {
+    font-size: 15px;
+}
+
+.media ul li {
+    float: left;
+    padding-left: 20px;
+    font-size: 28px;
+}
+
+.media ul li a {
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.media ul li a:hover {
+    color: #346fcf;
+}
+
+.cont {
+    font-size: 16px;
+}
+
+.btn-info {
+    transition: 0.3s;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.btn-info:hover {
+    background-color: #346fcf;
+}
+
+.ab {
+    color: #86b1f7;
+    font-size: 32px;
+}
+
+/* gallary start */
+
+/*Heading*/
+
+#Gallary-heading h4 {
+    padding: 80px 0px;
+    font-size: 30px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+/*Top drop down text*/
+
+#top-text {
+    position: absolute;
+    -webkit-animation-name: toptext1;
+    z-index: 1;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: toptext1;
+    animation-duration: 3s;
+    color: #f5f5f5;
+    margin-top: -40px;
+    font-size: 70px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif !important;
+    font-weight: bolder;
+    margin-left: 30px;
+    color: #fff;
+    font-weight: 700;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toptext1 {
+    0% {
+        margin-top: 20px;
+        color: #000;
+    }
+    100% {
+        margin-top: 300px;
+        color: #FFF;
+    }
+}
+
+.gal_img {
+    height: 250px;
+    width: 550px;
+}
+
+.gallery {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.zoom {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+}
+
+.zoom:hover, .zoom:active, .zoom:focus {
+    -ms-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    position: relative;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+.zoom {
+    margin-bottom: 10px;
+}
+
+#heading-text h3 {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 25px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#heading-text h5 {
+    color: #666;
+    width: 90%;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#option-heading {
+    padding: 80px 0px;
+}
+
+#option-heading hr {
+    background-color: #000;
+    height: 2px;
+}
+
+#option-heading h1 {
+    font-weight: bold;
+    color: #009;
+    font-size: 48px;
+    text-align: center;
+    margin-top: -3px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#resturant-option h4 {
+    color: #0CF;
+    font-size: 28px;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+#resturant-option h6 {
+    color: #FFF;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 12spx;
+    cursor: pointer;
+    background-color: #039;
+    width: 100px;
+    transition: 0.4s;
+    box-shadow: 4px 4px 10px #000;
+    height: 30px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#resturant-option h6:hover {
+    width: 140px;
+}
+
+#resturant-option h6 a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#resturant-option img {
+    box-shadow: 7px 7px 20px #666;
+    border: 2px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#resturant-option img:hover {
+    transform: scale(1.04)
+}
+
+#entertainment-option h3 {
+    color: #09F;
+    font-size: 28px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#entertainment-option p{
+    line-height: 23px;
+    color: #666;
+    width: 293px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif !important;
+}
+
+#entertainment-option h6 {
+    color: #FFF;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 12spx;
+    cursor: pointer;
+    background-color: #039;
+    width: 100px;
+    transition: 0.4s;
+    box-shadow: 4px 4px 10px #000;
+    height: 30px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#entertainment-option h6:hover {
+    width: 140px;
+}
+
+#entertainment-option h6 a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#entertainment-option video {
+    box-shadow: 7px 7px 20px #666;
+    border: 2px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+tr,td,th,p,h1,h2,h3,h4,h5,h6{
+	font-family:"Lucida Grande",
+	"Lucida Sans Unicode", "Lucida Sans",
+	"DejaVu Sans", Verdana, sans-serif !important;
+}
+
+#price-row{
+	height:80px;
+	color:#666;
+	border:1px solid #CCC;
+}
+
+#price-data{
+	padding:0px 20px 0px 0px;
+	text-align:center;
+	width:10%;
+	color:#666
+}
+
+#price-categories{
+	padding-left:15px;
+}
+
+#input-check{
+	width:40%;
+	height:30px;
+}
+
+.month ul {
+	background: #09c;
+  	margin: 0;
+  	list-style-type: none;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+  width:32%;
+  letter-spacing: 3px;
+  text-align:center;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    width:100%;
+   background-color: #006;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #FFF;
+    text-align: center;
+}
+
+.days {
+    padding: 6px 0px;
+    background: #CCC;
+    margin: 0;
+    width:100%;	
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+  padding:10px 0px;
+    font-size:12px;
+   color: #000;
+  transition:0.1s;
+  cursor:pointer;
+  
+}
+
+.days li:hover{
+	background-color:#06C;
+	color:#FFF;
+	
+}
+
+.date {
+    background: #1abc9c !important;
+    color: white;
+}
+
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+#weekend{
+	background-color:#999;
+}
+
+#weekend:hover{
+	background-color:#06C;
+}
+
+#select-num span{
+	font-size:30px;
+	color:#009;
+	cursor:pointer;
+	vertical-align:middle;
+	display:inline-block;
+	border:2px solid #009;
+	border-radius:100px;
+	padding:7px;
+}
+
+#select-num h1{
+	display:inline-block;
+	padding:10px;
+	vertical-align:middle;
+}
+
+#myNumber{
+    outline:none; 
+    border:none; 
+    background-color:#f5f5f5; 
+    width:22px; 
+    font-size:18px;
+    vertical-align:middle; 
+    display:inline-block
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#myNumber1{
+    outline:none; 
+    border:none; 
+    background-color:#f5f5f5; 
+    width:22px; 
+    font-size:18px;
+    vertical-align:middle; 
+    display:inline-block
+}
+
+#form label{
+	color:#666;
+	font-weight:100;
+}
+				
+#text {
+	height:55px;
+	background-color:#E6E6FA;
+	border-radius:3px;
+	padding-left:15px;
+	font-size:14px;	
+	outline:none;border:none;
+	width:175%;
+	
+}
+		
+#message{
+	background-color:#E6E6FA;
+	outline:none;border:none;
+	padding: 10px 0px 0px 15px;
+	width:102%;
+	font-size:15px;
+	color:#000;
+	border-radius:3px;
+	height:200px
+}			
+	
+			
+#submit{
+	color:#FFF;
+	background-color:#009;
+	outline:none;border:none;
+	transition:0.2s;
+}		
+			
+
+			
+#submit:hover{
+	 background-color:#06F;
+}
+
+.map-container{
+	border:2px solid #009;
+	box-shadow:5px 9px 18px #999;
+	border-radius:8px;
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;	
+	height:0;
+}
+	
+.map-container iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+
+
+
